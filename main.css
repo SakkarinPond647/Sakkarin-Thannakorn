@@ -78,6 +78,11 @@ li {
     font-size: 20px;
     display: flex;
 }
+.introduce li a {
+    text-decoration: none;
+    color: red;
+    font-weight: bold;
+}
 
 .footer {
     grid-column: 1 / span 2;
