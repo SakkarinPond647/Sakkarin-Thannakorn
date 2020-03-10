@@ -1,0 +1,180 @@
+body {
+   background-image: url(Pic/Sakura02.jpg);
+   background-size: cover;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 30% auto;
+    grid-gap: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    flex-wrap: wrap;
+    
+    background-image: url('http://www.mcctours.com.my/wp-content/uploads/2018/01/sakura-1-1.png'), 
+    url('http://www.mcctours.com.my/wp-content/uploads/2018/01/sakura-2.png');
+    animation: snow 20s linear infinite;
+}
+
+h2{
+    margin: 10px;
+}
+
+li {
+    margin: 25px;
+}
+
+.header {
+    grid-column: 1 / span 2;
+    border: 5px solid rgb(250, 122, 144);
+    background-color: rgba(255, 255, 255, 0.596);
+    box-shadow: 5px 5px 1px 0.5px rgba(0, 0, 0, 0.151);
+    text-align: center;
+    font-size: 25px;
+}
+
+.archive_Content {
+    grid-column: 1 / span 1;
+    border: 5px solid rgb(250, 122, 144);
+    background-color: rgba(255, 255, 255, 0.596);
+    box-shadow: 5px 5px 1px 0.5px rgba(0, 0, 0, 0.151);
+    position: relative;
+}
+.archive_Content h2:hover {
+    font-size: 25px;
+}
+.archive_Content h2 a{
+    text-decoration: none;
+    color: black;
+}
+.archive_Content .fa {
+    margin-right: 5px;
+}
+.archive_Content li {
+    display: flex;
+}
+.archive_Content li a {
+    text-decoration: none;
+    color: black;
+}
+
+.introduce_Content {
+    grid-column: 2 / span 1;
+    border: 5px solid rgb(250, 122, 144);
+    background-color: rgba(255, 255, 255, 0.596);
+    box-shadow: 5px 5px 1px 0.5px rgba(0, 0, 0, 0.151);
+    text-align: left;
+}
+.imgPro img {
+    width: 30%;
+    margin: 10px 37%;
+    border-radius: 50%;
+    border-style: solid;
+    border-color: black;
+}
+.introduce h2 {
+    font-size: 30px;
+}
+.introduce li {
+    font-size: 20px;
+    display: flex;
+}
+
+.footer {
+    grid-column: 1 / span 2;
+    font-size: 30px;
+    text-align: center;
+    border: 5px solid rgb(250, 122, 144);
+    background-color: rgba(255, 255, 255, 0.596);
+    box-shadow: 5px 5px 1px 0.5px rgba(0, 0, 0, 0.151);
+}
+
+@media only screen and (max-width: 500px) {
+    .container {
+        display: grid;
+        grid-template-columns: auto;
+        grid-gap: 10px;
+    }
+
+    .header {
+        grid-column: 1 / span 1;
+    }
+
+    .archive_Content {
+        grid-column: 1 / span 1;
+    }
+    
+    .introduce_Content {
+        grid-column: 1 / span 1;
+    }
+
+    .footer {
+        grid-column: 1 / span 1;
+    }
+}
+
+.snow-bg {
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+ }
+ 
+ @keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+ }
+
+ @media (max-width: 768px) {
+    .woocommerce ul.products li.product, 
+    .woocommerce-page ul.products li.product, 
+    .woocommerce-page[class*=columns-] ul.products li.product,
+    .woocommerce[class*=columns-] ul.products li.product {
+        width: 100%;
+        float: left;
+        clear: both;
+        margin: 0 7em;
+    }
+}
+
+.Heading{
+    grid-column: 1 / span 2;
+}
+.Heading h1{
+    background-color: black;
+    color: white;
+    text-align: center;
+    text-shadow: -1px 1px hotpink;
+}
+.LeuImgLogo{
+    grid-column: 1 / span 2;
+    width: 100%;
+    text-align: center;
+}
+.LeuImg{
+    grid-column: 1 / span 2;
+    width: 100%;
+}
+
+#Escape{
+    border: 5px inset black;
+    width: 25%;
+    margin: 10px 20px;
+}
+
+#Leukocytes{
+    border: 5px inset pink;
+    width: 25%;
+    margin: 10px 20px;
+}
+
+#Fantas{
+    border: 5px inset violet;
+    width: 25%;
+    margin: 10px 20px;
+}
